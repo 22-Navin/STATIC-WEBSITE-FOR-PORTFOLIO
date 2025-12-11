@@ -64,3 +64,10 @@ Completing this task helped me strengthen my core front-end development skills. 
 OUTPUT:
 
 <img width="1888" height="860" alt="Image" src="https://github.com/user-attachments/assets/e3383b5c-c0b2-40fd-8bfa-ff0ccca9cc02" />
+
+<img width="1878" height="855" alt="Image" src="https://github.com/user-attachments/assets/9733eda3-0603-419f-9530-d8ec028ba7b2" />
+
+<img width="1871" height="846" alt="Image" src="https://github.com/user-attachments/assets/e9240d0d-b71e-4b6f-ab2e-c7cbbea02e43" />
+
+<img width="1780" height="712" alt="Image" src="https://github.com/user-attachments/assets/415a8bd2-829b-4c2e-abad-bbbb584da9f0" />
+
