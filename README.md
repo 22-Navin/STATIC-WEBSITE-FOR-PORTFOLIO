@@ -60,3 +60,7 @@ The website is fully responsive using CSS Flexbox, Grid, and media queries. It a
 🔹 Outcome and Learning
 
 Completing this task helped me strengthen my core front-end development skills. I learned how to structure web pages effectively, apply modern styling practices, work with responsive layouts, and introduce interactive elements using JavaScript. This portfolio forms the foundation for future web development projects and demonstrates my ability to create clean, functional, and user-friendly interfaces.
+
+OUTPUT:
+
+<img width="1888" height="860" alt="Image" src="https://github.com/user-attachments/assets/e3383b5c-c0b2-40fd-8bfa-ff0ccca9cc02" />
