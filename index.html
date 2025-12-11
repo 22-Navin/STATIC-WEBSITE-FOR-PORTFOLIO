@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio — Task 1</title>
+  <style>body { background: lightblue !important; }</style>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Navin B.</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">&#9776;</button>
+
+      <nav id="site-nav" class="site-nav" aria-expanded="false">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Navin B.</span></h1>
+          <p class="lead">3rd Year CSE • Beginner Developer • Learning Web Development</p>
+
+          <p>
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact</a>
+          </p>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/profile-placeholder.png" alt="Profile Picture" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about container">
+      <h2>About Me</h2>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            I am a 3rd Year CSE student at SNS College of Technology currently learning software
+            development and building projects as part of my CODTECH internship.
+          </p>
+
+          <ul>
+            <li>College: SNS College of Technology</li>
+            <li>Domain: Software Development</li>
+            <li>Internship: CODTECH Task 1 — Portfolio Website</li>
+          </ul>
+        </div>
+
+        <div class="about-cards">
+          <div class="card">
+            <h3>Education</h3>
+            <p>B.E CSE — 3rd Year</p>
+          </div>
+
+          <div class="card">
+            <h3>Tools</h3>
+            <p>VS Code • Git • GitHub • Chrome DevTools</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container">
+      <h2>Skills</h2>
+
+      <div class="skill-list">
+        <div class="skill">
+          <h4>HTML</h4>
+          <div class="bar"><span style="width:90%"></span></div>
+        </div>
+
+        <div class="skill">
+          <h4>CSS</h4>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+
+        <div class="skill">
+          <h4>JavaScript</h4>
+          <div class="bar"><span style="width:60%"></span></div>
+        </div>
+
+        <div class="skill">
+          <h4>Python</h4>
+          <div class="bar"><span style="width:50%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <p class="muted">Click a project to view details</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card" tabindex="0"
+          data-title="Portfolio Website"
+          data-desc="A responsive portfolio built with HTML, CSS, and JS."
+          data-img="assets/project1.png">
+
+          <img src="assets/project1-thumb.png" alt="Portfolio Project Thumb" />
+          <h3>Portfolio Website</h3>
+          <p class="muted">HTML • CSS • JS</p>
+        </article>
+
+        <article class="project-card" tabindex="0"
+          data-title="Todo App"
+          data-desc="A simple todo list with add/delete options."
+          data-img="assets/project2.png">
+
+          <img src="assets/project2-thumb.png" alt="Todo App Thumbnail" />
+          <h3>Todo App</h3>
+          <p class="muted">HTML • CSS • JS</p>
+        </article>
+
+        <article class="project-card" tabindex="0"
+          data-title="Calculator"
+          data-desc="A basic calculator app built with JavaScript."
+          data-img="assets/project3.png">
+
+          <img src="assets/project3-thumb.png" alt="Calculator Project Thumb" />
+          <h3>Calculator</h3>
+          <p class="muted">HTML • CSS • JS</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROJECT MODAL -->
+    <div id="project-modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button id="modal-close" class="modal-close">&times;</button>
+        <img id="modal-image" src="" alt="" />
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>Contact Me</h2>
+      <p class="muted">Feel free to email or connect with me on GitHub / LinkedIn.</p>
+
+      <form id="contact-form" onsubmit="return handleSubmit(event)" class="contact-form">
+
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+
+        <p id="form-msg" class="form-msg"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Navin B. — CODTECH Internship Task-1</p>
+
+      <div class="social">
+        <a href="https://github.com/navin-your-username" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
